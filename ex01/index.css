@@ -1,0 +1,72 @@
+h2 {
+  margin-left: 30%;
+}
+
+.qwerty {
+  position: absolute;
+  margin-left: 30%;
+}
+textarea {
+  border: 1px solid #1e90ff;
+  color: dodgerblue;
+  width: 40em;
+  height: 50%;
+}
+::placeholder {
+  color: dodgerblue;
+}
+
+.keyboard {
+  background-color: black;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+
+
+button {
+  background-color: black;
+  color: white;
+}
+
+.regular {
+  width: 3em;
+  height: 3em;
+}
+.space {
+  width: 29.5em;
+  height: 3em;
+}
+
+.backspace,
+.capslock {
+  height: 3em;
+  width: 7em;
+}
+
+.enter,
+.shift,
+.ok {
+  height: 3em;
+  width: 10.3em;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .qwerty,
+  .keyboard,
+  #text-area,
+  h2 {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* For tablets: */
+  .qwerty,
+  #text-area,
+  h2 {
+    width: 80%;
+    margin-left: 0;
+  }
+}

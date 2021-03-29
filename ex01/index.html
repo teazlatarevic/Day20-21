@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Virtual Keyboard</title>
+    <link rel="stylesheet" href="./index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h2>QWERTY keyboard</h2>
+    <input id="capsLockChecker" type="hidden" value="false">
+    <input id="shiftChecker" type="hidden" value="false">
+    <div class="qwerty">
+    <textarea id="text-area" name="text-area" placeholder="TEXT AREA" rows="20" cols="70"></textarea>
+    <div class="keyboard">
+        <div class="first-row">
+            <button class="regular" value="1" onclick="pressed(this)">1</button>
+            <button class="regular" value="2" onclick="pressed(this)">2</button>
+            <button class="regular" value="3" onclick="pressed(this)">3</button>
+            <button class="regular" value="4" onclick="pressed(this)">4</button>
+            <button class="regular" value="5" onclick="pressed(this)">5</button>
+            <button class="regular" value="6" onclick="pressed(this)">6</button>
+            <button class="regular" value="7" onclick="pressed(this)">7</button>
+            <button class="regular" value="8" onclick="pressed(this)">8</button>
+            <button class="regular" value="9" onclick="pressed(this)">9</button>
+            <button class="regular" value="0" onclick="pressed(this)">0</button>
+            <button class="backspace" value="Backspace" onclick="specialKeyPress(this)">Backspace</button>
+        </div>
+        <div class="second-row">
+            <button class="regular" value="q" onclick="pressed(this)">q</button>
+            <button class="regular" value="w" onclick="pressed(this)">w</button>
+            <button class="regular" value="e" onclick="pressed(this)">e</button>
+            <button class="regular" value="r" onclick="pressed(this)">r</button>
+            <button class="regular" value="t" onclick="pressed(this)">t</button>
+            <button class="regular" value="y" onclick="pressed(this)">y</button>
+            <button class="regular" value="u" onclick="pressed(this)">u</button>
+            <button class="regular" value="i" onclick="pressed(this)">i</button>
+            <button class="regular" value="o" onclick="pressed(this)">o</button>
+            <button class="regular" value="p" onclick="pressed(this)">p</button>
+            <button class="capslock" value="Caps Lock" onclick="specialKeyPress(this)">Caps Lock</button>
+        </div>
+        <div class="third-row">
+            <button class="regular" value="a" onclick="pressed(this)">a</button>
+            <button class="regular" value="s" onclick="pressed(this)">s</button>
+            <button class="regular" value="d" onclick="pressed(this)">d</button>
+            <button class="regular" value="f" onclick="pressed(this)">f</button>
+            <button class="regular" value="g" onclick="pressed(this)">g</button>
+            <button class="regular" value="h" onclick="pressed(this)">h</button>
+            <button class="regular" value="j" onclick="pressed(this)">j</button>
+            <button class="regular" value="k" onclick="pressed(this)">k</button>
+            <button class="regular" value="l" onclick="pressed(this)">l</button>
+            <button class="enter" value="Enter" onclick="specialKeyPress(this)">Enter</button>
+        </div>
+        <div class="fourth-row">
+            <button class="regular" value="z" onclick="pressed(this)">z</button>
+            <button class="regular" value="x" onclick="pressed(this)">x</button>
+            <button class="regular" value="c" onclick="pressed(this)">c</button>
+            <button class="regular" value="v" onclick="pressed(this)">v</button>
+            <button class="regular" value="b" onclick="pressed(this)">b</button>
+            <button class="regular" value="n" onclick="pressed(this)">n</button>
+            <button class="regular" value="m" onclick="pressed(this)">m</button>
+            <button class="regular" value="-" onclick="pressed(this)">-</button>
+            <button class="regular" value="_" onclick="pressed(this)">_</button>
+            <button class="shift" value="Shift" onclick="specialKeyPress(this)">Shift</button>
+        </div>
+        <div class="fifth-row">
+            <button class="space" value="Space" onclick="specialKeyPress(this)">Space</button>
+            <button type="submit" class="ok" value="OK" onclick="specialKeyPress(this)">OK</button>
+        </div>
+    </div>
+</div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
